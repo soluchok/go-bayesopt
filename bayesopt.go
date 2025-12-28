@@ -7,7 +7,7 @@ import (
 
 	"gonum.org/v1/gonum/optimize"
 
-	"github.com/d4l3k/go-bayesopt/gp"
+	"github.com/soluchok/go-bayesopt/gp"
 )
 
 const (
@@ -250,7 +250,7 @@ func (o *Optimizer) Next() (x map[Param]float64, parallel bool, err error) {
 		Method: &method,
 		Bounds: o.mu.params,
 	}
-	// TODO(d4l3k): Bounded line searcher.
+	// TODO(soluchok): Bounded line searcher.
 	{
 		result, err := optimize.Minimize(problem, minX, nil, grad)
 		if isFatalErr(err) {

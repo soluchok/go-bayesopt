@@ -7,8 +7,8 @@ import (
 
 	"gonum.org/v1/gonum/floats"
 
-	"github.com/d4l3k/go-bayesopt/gp"
-	"github.com/d4l3k/go-bayesopt/gp/plot"
+	"github.com/soluchok/go-bayesopt/gp"
+	"github.com/soluchok/go-bayesopt/gp/plot"
 )
 
 func f(x, y float64) float64 {

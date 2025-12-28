@@ -3,7 +3,7 @@ package bayesopt
 import (
 	"math"
 
-	"github.com/d4l3k/go-bayesopt/gp"
+	"github.com/soluchok/go-bayesopt/gp"
 )
 
 // Exploration is the strategy to use for exploring the Gaussian process.
